@@ -6,7 +6,7 @@ var goodreads = require("goodreads");
 var port = 3002;
 
 var app = express();
-app.use(express.static(__dirname + "/app"));
+app.use(express.static(__dirname + "/books"));
 app.use(bodyParser.json());
 
 app.get("/shelves", goodreads.getShelves);
